@@ -6,6 +6,8 @@ A recovered instance is identical to the original instance, including the instan
 
 When the `StatusCheckFailed_System` alarm is triggered, and the recover action is initiated, you will be notified by the Amazon SNS topic that you selected when you created the alarm and associated the recover action\. During instance recovery, the instance is migrated during an instance reboot, and any data that is in\-memory is lost\. When the process is complete, information is published to the SNS topic you've configured for the alarm\. Anyone who is subscribed to this SNS topic will receive an email notification that includes the status of the recovery attempt and any further instructions\. You will notice an instance reboot on the recovered instance\.
 
+****Note-During the migration of your instance, it will reboot your instance****
+
 Examples of problems that cause system status checks to fail include:
 + Loss of network connectivity
 + Loss of system power
